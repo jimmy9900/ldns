@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 export default function DashboardScreen() {
   return (
-    <div className={`${styles.main} col-12 d-flex align-items-center`}>
+    <div className={`${styles.main} col-12 d-flex align-items-center bg-light`}>
       <div
         className={`${styles.container} col-2 justify-content-evenly align-items-center d-flex flex-column border-0 rounded-4 bg-dark gap-3`}
       >

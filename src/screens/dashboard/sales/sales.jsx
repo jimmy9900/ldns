@@ -1,20 +1,11 @@
-import { AlignCenterOutlined, TeamOutlined } from '@ant-design/icons';
-import styles from './style.module.css'
-const Sales = ({ bgColor }) => {
+import OverviewCard from '../overview/card';
+const Sales = () => {
 
     return (
-        <div>
-            <div className={styles.card} style={{ backgroundColor: bgColor }}>
-                <div className='d-flex justify-content-between p-3'>
-                    <h3>Deal Count</h3>
-                    <div className='d-flex col-3 justify-content-between'>
-                        <div>
-                            <TeamOutlined />
-                            <label>Team</label>
-                        </div>
-                        <AlignCenterOutlined />                    </div>
-                </div>
-            </div>
+        <div className='col-12 d-flex justify-content-between '>
+            <OverviewCard bgColor="#ff9d07" className="col-4" value="10,000" label="Deals Count"/>
+            <OverviewCard bgColor="#45926b" className="col-4" value="10,000" label="Deals Value"/>
+            <OverviewCard bgColor="#2f8bcc" className="col-4" value="10,000" label="Conversion rate"/>
         </div>
     );
 }

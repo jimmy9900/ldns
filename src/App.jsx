@@ -4,6 +4,7 @@ import { TailSpin } from 'react-loader-spinner'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import TicketScreen from './screens/dashboard/tickets/ticket';
 import Overview from './screens/dashboard/overview/overview';
+import Profile from './screens/profile/profile';
 const DashboardScreen = lazy(() => import('./screens/dashboard/dashboard'));
 const AboutScreen = lazy(() => import('./screens/about/about'));
 const Home = lazy(() => import('./screens/home/home'));
@@ -27,6 +28,7 @@ function App() {
             { path: "tickets", element: <TicketScreen /> },
             { path: "tasks", element: <div>Tasks</div> },
             { path: "services", element: <div>Services</div> },
+            { path: "profile", element: <Profile/> },
           ]
         }
       ],

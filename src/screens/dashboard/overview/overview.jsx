@@ -1,4 +1,4 @@
-import CustomAreaChart from '../../../components/charts/area_chart';
+import CustomAreaChart from "../../../components/charts/area_chart";
 
 const data = [
     { name: '1', Service1: 4000, Service2: 2400, },
@@ -37,7 +37,7 @@ const data = [
 export default function Overview() {
 
     return (
-
+        
         <CustomAreaChart data={data} className="w-50 h-50 overflow-x-hidden"
             keys={[{ label: "Service1", fill: "#8884d8", activeFill: "pink" }]}
         />

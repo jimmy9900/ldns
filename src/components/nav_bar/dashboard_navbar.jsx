@@ -2,6 +2,7 @@ import { UserOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { Avatar } from "antd";
 import DropDowmMenu from "../drop_down_menu";
+import { Link } from "react-router-dom";
 // import "./DashboardNavbar.css"; // Import the CSS file
 
 export default function DashboardNavbar() {
@@ -21,7 +22,7 @@ export default function DashboardNavbar() {
                 ]}
                 hasSearch={true}
             />
-            <Avatar size="large" icon={<UserOutlined />} style={{ cursor: 'pointer', marginLeft: '16px' }} />
+            <Avatar size="large" icon={<Link to="/user/:id/profile"><UserOutlined /></Link>} style={{ cursor: 'pointer', marginLeft: '16px' }} />
         </div>
     );
 }

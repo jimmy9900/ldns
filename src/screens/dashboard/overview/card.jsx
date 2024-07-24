@@ -1,6 +1,7 @@
 import { AlignCenterOutlined, TeamOutlined } from '@ant-design/icons';
 import styles from './style.module.css'
-const Sales = ({ bgColor }) => {
+
+export default function OverviewCard({ bgColor }) {
 
     return (
         <div>
@@ -19,4 +20,3 @@ const Sales = ({ bgColor }) => {
     );
 }
 
-export default Sales;

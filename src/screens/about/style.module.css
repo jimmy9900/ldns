@@ -33,3 +33,121 @@
     background-color: rgb(10, 10, 40);
     padding: 12px;
 }
+
+.titleblue {
+    color: #0088D7;
+}
+
+.sidetitleblue {
+    color: #0088D7;
+}
+
+.ulcontent {
+    font-family: roboto;
+    font-size: 32px;
+}
+
+.personpos {
+    top: -50px;
+    left: 135px;
+}
+
+.polygonpos {
+    top: 35px;
+    left: 130px;
+}
+
+.polyshapepos {
+    left: 80px;
+}
+
+.profilecard {
+    background: linear-gradient(147deg, #A40000 -60.82%, #014167 118.47%);
+    border: 0.729px solid #027FCA;
+    border-radius: 11.666px;
+}
+
+.profilebg {
+    background-image: url(./../../assets/VECTORS.png);
+    background-size: cover;
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.approachtext {
+    padding: 0 14rem;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.rightbottom {
+    top: 500px;
+    position: absolute;
+    left: 875px;
+}
+
+.rightcenter {
+    left: 965px;
+    position: absolute;
+    top: 400px;
+}
+
+.righttop {
+    top: 310px;
+    position: absolute;
+    left: 870px;
+}
+
+.gridbluetext {
+    background: linear-gradient(to top, #36619d, #13d6d6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: serif;
+    font-weight: 800;
+}
+
+.ulapprouch {
+    white-space: nowrap;
+}
+
+.ulapprouch ul {
+    list-style: none;
+    padding-left: 2px !important;
+}
+
+.ulapprouch ul li {
+    position: relative;
+    padding-left: 20px;
+    /* Adjust the spacing as needed */
+}
+
+.ulapprouch ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    /* Adjust the size of the bullet */
+    height: 10px;
+    /* Adjust the size of the bullet */
+    border: 1px solid #1573b2;
+    /* Outline color */
+    border-radius: 50%;
+    /* Makes the bullet circular */
+    background-color: transparent;
+    /* Make the inside transparent */
+}
+
+.approachcont {
+    background: linear-gradient(to right, #4d2e49, #025384);
+}
+
+.separator {
+    width: 2px;
+    height: 50px;
+    background-color: #0a6ba9;
+    margin: 0 10px;
+}

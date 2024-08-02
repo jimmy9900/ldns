@@ -1,165 +1,188 @@
+// @ts-nocheck
 import React from "react";
-import { Style } from "./style.module.css";
+import styles from "./style.module.css";
+import profile from "./../../assets/profilepic.png";
+import logo from "./../../assets/logo.png";
+import { Form, Input } from "antd";
+
 const Profile = () => {
   return (
-    <div className="container">
-      <div className="row gutter-sm justify-content-between">
-        <div className="col-md-4 mt-5 ms-4 mb-3">
-          <div className="card">
+    <div className="containere p-3 bg-dark vh-100 overflow-auto">
+      <div className="row justify-content-between">
+        <div className="col-md-6 mt-5 px-4 mb-3">
+          <div className={`card ${styles.bgsection} `}>
             <div className="card-body">
               {/* card of Personal Data */}
-              <div className="d-flex flex-column align-items-center text-center">
-                <img
-                  src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                  alt="Admin"
-                  className="rounded-circle"
-                  width="100"
-                />
-                <div className="mt-3">
-                  <h4>Jack Danial</h4>
-                  <p className="text-secondary mb-1 fs-5">
-                    <b> Company: </b> Solar Robot
-                  </p>
-                  <p className="text-muted font-size-sm fs-6">
-                    <b>Address</b> Bay Area, San Francisco, CA
-                  </p>
-                  <button className="btn btn-outline-info">Edit</button>
-                  <button className="btn btn-primary ms-2">Book a Call</button>
+              <div className="d-flex flex-column ">
+                <h3 className="fs-2 text-white mb-4">Clients Information</h3>
+                <div className="align-items-center text-center">
+                  <img
+                    src={profile}
+                    alt="Admin"
+                    className="rounded-circle img-fluid"
+                    width="100"
+                  />
+                </div>
+
+                <div className="mt-3 text-white">
+                  <form action="">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        Full Name:
+                      </label>
+                      <input
+                        type="text"
+                        className={`form-control ${styles.transbginput}`}
+                        id="exampleFormControlInput1"
+                        value="Jack Danial"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        E-mail
+                      </label>
+                      <input
+                        type="email"
+                        className={`form-control ${styles.transbginput}`}
+                        id="exampleFormControlInput1"
+                        value="JackDanial@leadbull.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        Phone Number
+                      </label>
+                      <input
+                        type="text"
+                        className={`form-control ${styles.transbginput}`}
+                        id="exampleFormControlInput1"
+                        value="66786855"
+                      />
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-          <div className="card mt-3">
+          <div className={`${styles.bgsection} card mt-3`}>
             {/* Service linkes */}
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                <h6 className="mb-0 fs-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className="feather feather-globe mr-2 icon-inline me-2"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                  Service 1
-                </h6>
-                <span className="text-secondary fs-6">Customer Service</span>
-              </li>
-              <li className="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                <h6 className="mb-0 fs-6">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    className="feather feather-globe mr-2 icon-inline me-2"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                  Service 2
-                </h6>
-                <span className="text-secondary fs-6">Telesales</span>
-              </li>
-            </ul>
+            <div class="card-body">
+              <h5 class="card-title text-white mb-4">Services</h5>
+              <div className="row d-flex justify-content-center">
+                <div className="col-sm-6 col-md-6 col-lg-4 mb-2">
+                  <div className={`${styles.bgservicesection} card text-white`}>
+                    <div className="card-header text-start">
+                      <h6 className="fs-5 text-center">Service Name</h6>
+                    </div>
+                    <div className="card-body d-flex justify-content-between">
+                      <h5 className="fw-medium text-start">Leads</h5>
+                      <h5 className="">5+</h5>
+                    </div>
+                    <div className="card-body d-flex justify-content-between">
+                      <h5 className="fw-medium text-start">Sales</h5>
+                      <h5 className="">7+</h5>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-6 col-lg-4 mb-2">
+                  <div className={`${styles.bgservicesection} card text-white`}>
+                    <div className="card-header text-start">
+                      <h6 className="fs-5 text-center">Service Name</h6>
+                    </div>
+                    <div className="card-body d-flex justify-content-between">
+                      <h5 className="fw-medium text-start">Leads</h5>
+                      <h5 className="">5+</h5>
+                    </div>
+                    <div className="card-body d-flex justify-content-between">
+                      <h5 className="fw-medium text-start">Sales</h5>
+                      <h5 className="">7+</h5>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6 col-md-6 col-lg-4 mb-2">
+                  <div className={`${styles.bgservicesection} card text-white`}>
+                    <div className="card-header text-start">
+                      <h6 className="fs-5 text-center">Service Name</h6>
+                    </div>
+                    <div className="card-body d-flex justify-content-between">
+                      <h5 className="fw-medium text-start">Leads</h5>
+                      <h5 className="">5+</h5>
+                    </div>
+                    <div className="card-body d-flex justify-content-between">
+                      <h5 className="fw-medium text-start">Sales</h5>
+                      <h5 className="">7+</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="col-md-7 mt-5 ms-1 mb-3">
-          <div className="card mb-3">
-            <div className="card-body">
+        <div className="col-md-6 mt-5 px-4 mb-3">
+          <div className={`card ${styles.bgsection} `}>
+            <div className="card-body mb-4">
               <div className="row">
-                <div className="col-sm-3">
-                  <h6 className="mb-0 fs-5 text-start">Full Name</h6>
-                </div>
-                <div className="col-sm-9 text-secondary fs-6">
-                  Jack Danial Kenneth Valdez
-                </div>
-              </div>
-              <hr />
-              <div className="row">
-                <div className="col-sm-3">
-                  <h6 className="mb-0 fs-5 text-start">Email</h6>
-                </div>
-                <div className="col-sm-9 text-secondary fs-6">
-                  Jack_Danial@mail.com
-                </div>
-              </div>
-              <hr />
-              <div className="row">
-                <div className="col-sm-3">
-                  <h6 className="mb-0 fs-5 text-start">Phone</h6>
-                </div>
-                <div className="col-sm-9 text-secondary fs-6">
-                  (+239) 816-9029
-                </div>
-              </div>
-              <hr />
-              <div className="row">
-                <div className="col-sm-3">
-                  <h6 className="mb-0 fs-5 text-start">Mobile</h6>
-                </div>
-                <div className="col-sm-9 text-secondary fs-6">
-                  (+320) 380-4539
-                </div>
-              </div>
-              <hr />
-              <div className="row">
-                <div className="col-sm-3">
-                  <h6 className="mb-0 fs-5 text-start">Address</h6>
-                </div>
-                <div className="col-sm-9 text-secondary fs-6">
-                  Bay Area, San Francisco, CA
-                </div>
-              </div>
-              <hr />
-              <div className="row">
-                <div className="col-sm-12 text-start ms-3">
-                  <a
-                    className="btn btn-info"
-                    target="__blank"
-                    href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills"
-                  >
-                    Edit
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row gutters-sm">
-            <div className="col-sm-12 mb-3">
-              <div className="card h-100">
-                <div className="card-body">
-                  <h6 className="d-flex align-items-center justify-content-center mb-3">
-                    <i className="material-icons text-info mr-2 me-1">
-                      Service
-                    </i>
-                    Insight
+                <div className="col">
+                  <h6 className="fs-5 text-start text-white mb-5">
+                    Company Information
                   </h6>
-                  <p className="fs-6 justify-content-start text-start">
-                    Web Design
-                  </p>
-                  <div className="progress mb-3 section-height">
-                    <div
-                      className="progress-bar bg-primary w-50"
-                      role="progressbar"
-                    ></div>
-                  </div>
+                </div>
+                <div className="col-12 text-center">
+                  <img src={logo} alt="" className="img-fluid w-50" />
+                  <h6 className="fs-5 my-5 fw-light text-center text-white mb-5">
+                    Edit company profile
+                  </h6>
+                </div>
+                <div className="mt-3 text-white pb-5">
+                  <form action="">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        Company Name:
+                      </label>
+                      <input
+                        type="text"
+                        className={`form-control ${styles.transbginput}`}
+                        id="exampleFormControlInput1"
+                        value="Jack Danial"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        E-mail
+                      </label>
+                      <input
+                        type="email"
+                        className={`form-control ${styles.transbginput}`}
+                        id="exampleFormControlInput1"
+                        value="JackDanial@leadbull.com"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">
+                        Phone Number
+                      </label>
+                      <input
+                        type="text"
+                        className={`form-control ${styles.transbginput}`}
+                        id="exampleFormControlInput1"
+                        value="66786855"
+                      />
+                    </div>
+                    <div className="justify-content-between d-flex">
+                      <button
+                        className="btn btn-outline-primary px-sm-4 px-md-5 text-white fw-bold"
+                        type="reset"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        className="btn btn-primary px-sm-4 px-md-5 fw-bold"
+                        type="submit"
+                      >
+                        Save
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>

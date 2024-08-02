@@ -1,0 +1,18 @@
+.section-height {
+    height: 5px;
+}
+
+.bgsection {
+    background: linear-gradient(99deg, rgba(255, 0, 0, 0.20) 1.27%, rgba(0, 181, 208, 0.20) 92.23%);
+    background-color: #00000000 !important;
+}
+
+
+.transbginput {
+    background-color: #00000000 !important;
+    color: #fff !important;
+}
+
+.bgservicesection {
+    background: linear-gradient(88deg, #026CAB -57.75%, #F94144 195.32%);
+}
